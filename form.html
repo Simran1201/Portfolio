@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Form</title>
+  </head>
+  <body>
+    
+    <div class="form">    
+      <fieldset><legend>Personal information</legend>
+      <h1 style="text-align: center; color:#d3e3ff; font-size: xxx-large;">Form:</h1><br>
+      <form action="mailto: prasadsimran117@gmail.com">
+        <label for="name" class="main">Enter your Name: <sup style="color:red">*</sup></label>
+        <input type="text" class="name tex" placeholder="Type here.."  required/>
+        <br>
+        <br>
+        <label for="mail" class="main">Enter your Mail: <sup style="color:red">*</sup></label>
+        <input type="email" class="mail tex" placeholder="eg:abc123@gmail.com" required />
+        <br /><br>
+        <label for="phone" class="main">Enter your phone number: <sup style="color:red">*</sup></label>
+        <input type="phone" class="phone tex"  pattern="[0-9]{10}" required placeholder="10 digit phone number">
+        <br><br>
+        <label class="main" for="gender" >Gender: <sup style="color:red">*</sup></label>
+        <label for="male" class="gen">
+          <input type="radio" class="gender" id="male" name="gender" >Male
+        </label>
+        <label for="female" class="gen">
+          <input type="radio" class="gender" id="female" name="gender">Female
+        </label>
+        <label for="other" class="gen">
+          <input type="radio" class="gender" id="other" name="gender" >other
+        </label>
+        <br /><br>
+        <label class="main" for="date">Date of Birth: <sup style="color:red">*</sup></label>
+        <input type="date" id="date" class="date" required>
+        <br><br>
+        <label class="main">Skills:</label><br>
+        <label for="html" class="skil"
+          ><input type="checkbox" class="skills" name="skills" id="html" />HTML
+        </label>
+        <label for="css" class="skil">
+            <input type="checkbox" class="skills" name="skills" id="css"/>CSS
+        </label>
+        <label for="js" class="skil">
+            <input type="checkbox" class="skills" name="skills" id="js"/>JS
+        </label>
+        <label for="react" class="skil">
+            <input type="checkbox" class="skills" name="skills" id="react"/>REACT
+        </label>
+        <label for="php" class="skil">
+            <input type="checkbox" class="skills" name="skills" id="php"/>PHP
+        </label>
+        <br><br>
+        <label class="main" for="select">Select your Course: <sup style="color:red">*</sup></label>
+        <select class="course" id="select" required>
+            <option selected disabled>Select</option>
+            <option>Web development</option>
+            <option>Web design</option>
+            <option>Full stack</option>
+        </select>
+        <br><br>
+        <label class="main" for="resume">Attach your Resume here: <sup style="color:red">*</sup></label>
+        <input type="file" id="resume" required class="resume">
+        <br><br>
+        <label class="main" for="query">Any Queries?</label><br>
+        <textarea cols="33" rows="3" placeholder="Comment here.." id="query"></textarea>
+        <br><br>
+        <input type="submit" class="btn">
+        <input type="reset" class="btn">
+      </form>
+    </fieldset>
+    </div>
+    <br>
+  </body>
+</html>

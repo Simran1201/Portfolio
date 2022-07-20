@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=BIZ+UDGothic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(8, 123, 199, 0.521);
+    width: 100%;
+    overflow-x: hidden;
+    /* background-image: url(img/bg4.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+header{
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    height: 60px;
+    background-color: rgb(80, 80, 201);
+    display: block;
+}
+.check-box{
+    font-size: 50px;
+    float: right;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.logo{
+    padding: 10px 30px;
+}
+.logo img{
+    width: 40px;
+    border-radius: 18px;
+    margin-right: 20px;
+}
+.text{
+    font-size: larger;
+    padding: 0px 40px 0px 20px;
+    color: antiquewhite;
+    /* margin-right: 30px; */
+}
+ul a:hover{
+    background-color: rgb(169, 121, 214);
+    color: darkblue;
+    padding: 10px;
+}
+.nav-bar , .logo , ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px 30px;
+    font-size: xx-large;
+    text-align: center;
+}
+.drop ul ul{
+    position: relative;
+    top:15px;
+    display: none;
+    background-color: darkgreen;
+}
+.drop ul li:hover >ul{
+    display: block;
+}
+
+nav ul ul a{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    
+}
+.container{
+    width: 90%;
+    margin: 60px;
+    padding: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo{
+    width: 20%;
+    padding: 40px;
+    border-radius: 90%;
+    
+}
+.into{
+    padding: 60px;
+    margin: 30px;
+    font-size: xx-large;
+    text-align: center;
+}
+.into p{
+    font-size: 30px;
+}
+.service{
+    text-align: center;
+    line-height: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    /* margin: 50px; */
+    padding: 20px;
+    width: 100%;
+}
+.service p{
+    color: gray;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+.service h3{
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding: 20px;
+}
+.detail{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.icon{
+    margin: 20px 50px;
+    padding: 20px;
+}
+.icon img{
+    width: 60px;
+    padding: 30px;
+}
+.icon .ui{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.item{
+    padding: 10px;
+    margin: 20px;
+    width: 100%;
+    box-sizing: content-box;
+}
+.item:hover{
+    box-shadow: 4px 4px 7px black;
+}
+.item h2{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    color:rgb(2, 2, 85);
+    padding: 35px;
+}
+.card{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+.card2{
+    border: 1px solid rgb(240, 229, 229);
+    height: 400px;
+    margin: 30px;
+    width: 90%;
+}
+.card2:hover{
+    box-shadow: 5px 5px 9px white;
+    transition: 1s;
+    /* transform:rotateX(40deg); */
+    transform: skewX(10deg);
+    /* transform:rotateY(40deg); */
+    /* transform:rotateZ(40deg); */
+}
+.card a{
+    color:darkred;
+    text-decoration: none;
+}
+.img{
+    height: 300px;
+}
+.img img{
+    padding: 20px;
+    width: 90%;
+    border-radius: 20px;
+}
+.card-item{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.card a :hover{
+    text-decoration:underline;
+    color: rgb(204, 226, 219);
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(70, 70, 70);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 140px;
+}
+.cont img{
+    width: 50px;
+    padding: 30px;
+}
+.line{
+    padding: 70px 0;
+}
+.contact p{
+    font-size: 50px;
+}
+.contact b{
+    font-size: 20px;    
+}
+
+@media screen and (max-width: 899px) {
+    .logo img{
+        width: 50px;
+    }
+    .container{
+        flex-direction: column;
+        padding: 0px;
+        margin-top: 90px;
+    }
+    .photo{
+        width: 60%;
+    }
+    .askme{
+        height: 900px;
+        width: 500px;
+    }
+    .into{
+        padding-left: 0px;
+    }
+    .into span::before{
+        content: "\a";
+        white-space: pre;
+    }
+    .detail{
+        flex-direction: column;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .item{
+        margin: 15px;
+        width: 90vw;
+    }
+    .check-box{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        height: 80vh;
+        background-color: bisque;
+        top:80px;
+        left:-250px;
+        display: block;
+        transition: all 0.2s linear;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        line-height: 30px;
+        margin: 40px 0;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+        width: 100%;
+    }
+}

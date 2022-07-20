@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(35, 1, 54);
+    margin: 20px;
+}
+.form{
+    padding: 20px;
+    width: 60vw;
+    background-color:rgb(112 18 167);
+    color: rgb(247, 247, 247);
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.form:hover{
+    transition: 1s linear;
+    box-shadow: 4px 4px 7px white;
+}
+.main{
+    font: bolder;
+    font-size: xx-large;
+}
+.main::after{
+    content: "\a";
+    white-space: pre;
+}
+.tex{
+    font-size: large;
+    padding: 7px;
+    margin: 20px 0;
+    width: 30vw;
+}
+.gender{
+    cursor: pointer;
+    margin: 20px 0px;
+    width: 40px;
+}
+.gen{
+    font-size: x-large;
+    cursor: pointer;
+}
+.date{
+    padding: 7px;
+    margin: 20px 0;
+    width: 22vw;
+    font-size: x-large;
+}
+.skil{
+    padding: 10px;
+    margin: 20px 0;
+    width: 30vw;
+    font-size: x-large;
+    cursor: pointer;
+}
+.skil input{
+    margin-right: 10px;
+}
+input.skills{
+    width: 20px;
+    height: 20px;
+}
+.course{
+    padding: 10px;
+    margin: 20px 0;
+    width: 23vw;
+    font-size: x-large;
+    cursor: pointer;
+}
+.course option{
+    font-size: x-large;
+}
+.resume{
+    padding: 10px;
+    margin: 20px 0;
+    width: 40vw;
+    font-size: x-large;
+    cursor: pointer;
+}
+.btn{
+    padding: 10px;
+    margin: 40px;
+    width: 20vw;
+    font-weight: bolder;
+    font-size: x-large;
+    cursor: pointer;
+    color: darkblue;
+    background-color: rgb(84, 178, 178);
+    border: 1px solid white;
+    /* box-shadow: 3px 3px 8px white; */
+}
+.btn:hover{
+    transition: 1s;
+    background-color: darkblue;
+    color: aqua;
+    box-shadow: 3px 3px 8px white;
+}
+@media screen and (max-width: 851px) {
+    .form{
+        padding: 10px;
+        width: 85vw;
+    }
+    .tex{
+        width: 45vw;
+    }
+    .gender{
+        width: 50px;
+    }
+    .btn{
+        padding: 10px;
+        margin: 30px;
+        width: 30vw;
+    }
+}

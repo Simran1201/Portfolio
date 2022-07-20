@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Java Script</title>
+</head>
+<body>
+    <div class="all">
+        <h1 class="todo">Todo List</h1>
+        <div class="container">
+            <label for="title" class="title">Title</label>
+            <br>
+            <input type="text" id="to-do" class="tit" placeholder="Add an item to the list">
+            <br>
+            <label for="desc" class="desc">Description</label>
+            <br>
+            <textarea id="desc" class="des" placeholder="Enter Your Work..." col="50" rows="5"></textarea>
+            <br>
+            <button id="btn" onclick="fun()" class="submit">Submit</button>
+        </div>
+    </div>
+    <!-- <ol id="mylis t" ></ol> -->
+    <div class="table">        
+        <table class="tab" id="dis" border="1">            
+            <tr class="head">
+                <td>Title</td>
+                <td>Description</td>
+            </tr>
+            <tr  id="mylist" class="trr"> </tr>
+           
+        </table>
+    </div>
+    
+    <script>
+      var list = document.getElementById("mylist");
+        function fun(){  
+            dis.style.display="contents";          
+            var value= document.getElementById("to-do").value;
+            var li = document.createElement("TD");
+            var textnode = document.createTextNode(value);
+            li.appendChild(textnode);
+            list.appendChild(li);
+
+            var value2= document.getElementById("desc").value;
+            var li = document.createElement("TD");
+            var textnode = document.createTextNode(value);
+            li.appendChild(textnode);
+            list.appendChild(li);
+        }
+        list.addEventListener("click",function(ev){
+            if(ev.target.tagName === "TD"){
+                ev.target.classList.toggle("checked");
+            }
+        },false);
+
+        
+        // function add(){
+        //     dis.style.display="contents";
+        //     num1.innerText = tit.value;
+        //     num2.innerText = desc.value;
+        //     // ans.innerText = desc.value;
+        // }
+    </script>
+</body>
+</html>
